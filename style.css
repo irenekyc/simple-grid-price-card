@@ -121,10 +121,12 @@ p{
 
 
 @media (min-width:900px){
-
+    :root{
+        --section-padding: 2.5rem 4rem;
+    }
     .section-price{
         width:80%;
-        max-width:1000px;
+        max-width:900px;
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -134,6 +136,7 @@ p{
 
     .section-price-intro{
         grid-area: intro;
+        
     }
 
     .section-price-card{
