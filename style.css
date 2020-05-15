@@ -78,6 +78,10 @@ p{
 .section-price{
     background:white;
     border-radius: 10px;
+    max-width:500px;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
 }
 
 .section-price-intro{
@@ -114,3 +118,38 @@ p{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width:900px){
+
+    .section-price{
+        width:80%;
+        max-width:1000px;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'intro intro'
+        'price-card features';
+    }
+
+    .section-price-intro{
+        grid-area: intro;
+    }
+
+    .section-price-card{
+        grid-area: price-card;
+        display:flex;
+        flex-direction: column;
+        border-radius: 0 0 0 10px;
+    }
+    .section-main-content{
+        flex:1;
+    }
+
+    .section-price-features{
+        grid-area: features;
+        display:flex;
+        flex-direction: column;
+        border-radius: 0 0 10px 0;
+    }
+}
