@@ -1,0 +1,116 @@
+:root{
+    --primary-cyan:hsl(179, 62%, 43%);
+    --primary-cyan-light: hsl(179,50%, 50%);
+    --primary-yellow: hsl(71, 73%, 54%);
+    --main-background: hsl(204, 43%, 93%);
+    --main-text-color: hsl(218, 22%, 67%);
+    --main-font: 'Karla', sans-serif;
+    --section-padding: 2rem 1.5rem;
+}
+
+body{
+    background: var(--main-background);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    font-size:12px;
+    padding: 3rem 8%;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    border:none;
+    outline:none;
+}
+
+.heading-text{
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+.lead{
+    font-size: 1.1rem;
+}
+
+.primary-yellow{
+    color: var(--primary-yellow);
+}
+
+.secondary-text{
+    color: var(--main-background);
+}
+
+p{
+    line-height:2;
+    font-size:0.9rem;
+}
+
+.primary-cyan{
+    color: var(--primary-cyan);
+}
+
+.my-1{
+    margin:1rem 0;
+}
+
+.btn{
+    width:100%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.9rem;
+    font-size:0.9rem;
+}
+
+.btn-primary-yellow{
+    background: var(--primary-yellow);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-price{
+    background:white;
+    border-radius: 10px;
+}
+
+.section-price-intro{
+    padding: var(--section-padding);
+}
+
+.section-price-card{
+    background: var(--primary-cyan);
+    color: white;
+    padding: var(--section-padding);
+}
+
+.price-decoration{
+    font-size: 2.5rem; 
+    font-weight:700;
+    margin-right: 1rem;
+    
+}
+
+
+.section-price-features{
+    color: var(--main-background);
+    background: var(--primary-cyan-light);
+    padding: var(--section-padding);
+    border-radius: 0 0 10px 10px;;
+}
+
+.section-price-features li{
+    padding: 0.2rem 0;
+    font-size:0.9rem;
+    
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
